@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-rf-blue: #1d4ed8;
+  --color-rf-ink: #0f172a;
+  --color-rf-mist: #eef3ff;
+  --color-rf-lime: #a3e635;
+  --font-sans: "Avenir Next", "Helvetica Neue", "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  background: #ffffff;
+  color: #0f172a;
+  font-family: var(--font-sans);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
